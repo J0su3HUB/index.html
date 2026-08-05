@@ -1,294 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Evaluación de Unidades - UTC Ecuador</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
+    <meta charset="UTF-8">
 
-body{
-background:linear-gradient(135deg,#003366,#00509d);
-color:white;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-header{
-text-align:center;
-padding:30px;
-}
+    <title>Portafolio - Universidad Técnica de Cotopaxi</title>
 
-header img{
-width:220px;
-filter:drop-shadow(0px 5px 10px rgba(0,0,0,.4));
-}
+    <link rel="stylesheet" href="css/style.css">
 
-header h1{
-margin-top:15px;
-font-size:40px;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-.contenedor{
-max-width:1200px;
-margin:auto;
-padding:20px;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.perfil{
-display:flex;
-gap:30px;
-background:white;
-color:#222;
-border-radius:20px;
-padding:25px;
-align-items:center;
-box-shadow:0 10px 20px rgba(0,0,0,.25);
-margin-bottom:40px;
-flex-wrap:wrap;
-}
-
-.foto{
-width:250px;
-height:250px;
-border-radius:20px;
-overflow:hidden;
-border:5px solid #00509d;
-}
-
-.foto img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-.bio{
-flex:1;
-}
-
-.bio h2{
-color:#003366;
-margin-bottom:15px;
-}
-
-.bio p{
-font-size:18px;
-line-height:1.7;
-}
-
-.unidades{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-color:#333;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 20px rgba(0,0,0,.3);
-transition:.4s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card h2{
-text-align:center;
-margin-bottom:15px;
-color:#003366;
-}
-
-.estrellas{
-font-size:35px;
-text-align:center;
-color:gold;
-margin-bottom:15px;
-}
-
-.comentario{
-font-size:17px;
-text-align:justify;
-line-height:1.6;
-}
-
-footer{
-margin-top:40px;
-padding:20px;
-text-align:center;
-background:#001f3f;
-}
-
-button{
-margin-top:20px;
-padding:12px 25px;
-border:none;
-background:#00509d;
-color:white;
-font-size:17px;
-border-radius:10px;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-background:#0074d9;
-}
-
-.oculto{
-display:none;
-margin-top:15px;
-background:#eef5ff;
-padding:15px;
-border-radius:10px;
-color:#003366;
-font-weight:bold;
-}
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+<!-- ================= MENU ================= -->
+
 <header>
 
-<!-- CAMBIA ESTA URL POR EL LOGO OFICIAL DE LA UTC -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Logo UTC">
+<nav>
 
-<h1>Universidad Técnica de Cotopaxi</h1>
+<div class="logo">
+
+<img src="img/logo.png" alt="Logo UTC">
+
+</div>
+
+<ul>
+
+<li><a href="index.html" class="activo">Inicio</a></li>
+
+<li><a href="biografia.html">Biografía</a></li>
+
+<li><a href="evaluacion.html">Evaluación</a></li>
+
+<li><a href="contacto.html">Contacto</a></li>
+
+</ul>
+
+</nav>
 
 </header>
 
-<div class="contenedor">
+<!-- ================= HERO ================= -->
 
-<div class="perfil">
+<section class="hero">
 
-<div class="foto">
+<div class="hero-texto">
 
-<!-- CAMBIA ESTA IMAGEN POR TU FOTO -->
-<img src="https://via.placeholder.com/300x300.png?text=Mi+Foto">
+<h1>
 
-</div>
+Universidad Técnica de Cotopaxi
 
-<div class="bio">
+</h1>
 
-<h2>Mi Biografía</h2>
+<h2>
+
+Portafolio Académico
+
+</h2>
 
 <p>
 
-Soy estudiante de la Universidad Técnica de Cotopaxi, comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades tecnológicas. Me interesa la programación, el desarrollo web y la creación de proyectos innovadores. Este espacio presenta una valoración personal sobre las tres unidades desarrolladas durante el curso.
+Bienvenido a mi sitio web.
+
+En este espacio podrás conocer un poco sobre mí,
+
+mi trayectoria académica y la valoración realizada
+
+sobre las tres unidades desarrolladas durante el curso.
 
 </p>
 
-<button onclick="mensaje()">Ver mensaje</button>
+<a href="biografia.html">
 
-<div class="oculto" id="mensaje">
-¡Gracias por visitar mi página! Espero que esta evaluación sea de su agrado.
+<button>
+
+Conocer más
+
+</button>
+
+</a>
+
 </div>
 
-</div>
+<div class="hero-imagen">
+
+<img src="img/logo.png" alt="UTC">
 
 </div>
 
-<div class="unidades">
+</section>
+
+<!-- ================= TARJETAS ================= -->
+
+<section class="info">
 
 <div class="card">
 
-<h2>⭐ Unidad 1</h2>
+<h2>Biografía</h2>
 
-<div class="estrellas">
-★★★★☆
-</div>
+<p>
 
-<div class="comentario">
+Conoce mi perfil académico,
 
-La primera unidad permitió comprender los conceptos fundamentales de la asignatura. Las actividades fueron claras, organizadas y facilitaron un aprendizaje progresivo, fortaleciendo las bases necesarias para continuar con el curso.
+mis intereses y objetivos profesionales.
 
-</div>
+</p>
 
-</div>
+<a href="biografia.html">
 
-<div class="card">
+<button>
 
-<h2>⭐ Unidad 2</h2>
+Ver Biografía
 
-<div class="estrellas">
-★★★★☆
-</div>
+</button>
 
-<div class="comentario">
-
-Durante esta unidad se desarrollaron ejercicios prácticos que fortalecieron el pensamiento lógico y la resolución de problemas. Los contenidos fueron interesantes y contribuyeron significativamente al desarrollo de nuevas habilidades.
-
-</div>
+</a>
 
 </div>
 
 <div class="card">
 
-<h2>⭐ Unidad 3</h2>
+<h2>Evaluación</h2>
 
-<div class="estrellas">
-★★★★☆
+<p>
+
+Observa la calificación de las
+
+tres unidades del curso mediante
+
+un sistema de estrellas.
+
+</p>
+
+<a href="evaluacion.html">
+
+<button>
+
+Ver Evaluación
+
+</button>
+
+</a>
+
 </div>
 
-<div class="comentario">
+<div class="card">
 
-La tercera unidad integró todos los conocimientos adquiridos anteriormente mediante proyectos y actividades dinámicas. Fue una excelente oportunidad para aplicar lo aprendido y mejorar las competencias técnicas.
+<h2>Contacto</h2>
+
+<p>
+
+Encuentra mis redes sociales,
+
+correo electrónico y demás
+
+medios de contacto.
+
+</p>
+
+<a href="contacto.html">
+
+<button>
+
+Contactarme
+
+</button>
+
+</a>
 
 </div>
 
-</div>
+</section>
 
-</div>
+<!-- ================= FRASE ================= -->
 
-</div>
+<section class="frase">
+
+<h2>
+
+"La educación es el pasaporte hacia el futuro, porque el mañana pertenece a quienes se preparan para él hoy."
+
+</h2>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-© 2026 - Universidad Técnica de Cotopaxi | Elaborado por: Tu Nombre
+<p>
+
+© 2026 Universidad Técnica de Cotopaxi
+
+</p>
+
+<p>
+
+Desarrollado por:
+
+<strong>Tu Nombre</strong>
+
+</p>
 
 </footer>
 
-<script>
-
-function mensaje(){
-
-document.getElementById("mensaje").classList.toggle("oculto");
-
-}
-
-window.onload=function(){
-
-const cards=document.querySelectorAll(".card");
-
-cards.forEach((card,i)=>{
-
-card.style.opacity="0";
-
-card.style.transform="translateY(50px)";
-
-setTimeout(()=>{
-
-card.style.transition="1s";
-
-card.style.opacity="1";
-
-card.style.transform="translateY(0px)";
-
-},i*300);
-
-});
-
-}
-
-</script>
+<script src="js/script.js"></script>
 
 </body>
+
 </html>

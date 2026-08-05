@@ -1,219 +1,364 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Académico - UTC</title>
 
-    <title>Portafolio - Universidad Técnica de Cotopaxi</title>
+<style>
 
-    <link rel="stylesheet" href="css/style.css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+body{
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+background:#f7f5ef;
+color:#333;
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+}
+
+/* Encabezado */
+
+header{
+
+background:#ececec;
+padding:30px;
+text-align:center;
+box-shadow:0px 3px 8px rgba(0,0,0,.2);
+
+}
+
+header img{
+
+width:220px;
+margin-bottom:15px;
+
+}
+
+header h1{
+
+font-size:38px;
+color:#444;
+
+}
+
+header p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* Contenedor */
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+margin-top:40px;
+
+}
+
+/* Primera Sección */
+
+.biografia{
+
+display:flex;
+gap:40px;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0px 5px 15px rgba(0,0,0,.12);
+
+}
+
+.foto{
+
+flex:1;
+text-align:center;
+
+}
+
+.foto img{
+
+width:280px;
+height:320px;
+border-radius:15px;
+object-fit:cover;
+border:6px solid #d9d9d9;
+
+}
+
+.info{
+
+flex:2;
+
+}
+
+.info h2{
+
+font-size:32px;
+margin-bottom:20px;
+color:#555;
+
+}
+
+.info p{
+
+font-size:18px;
+line-height:32px;
+text-align:justify;
+
+}
+
+/* Segunda sección */
+
+.estrellas{
+
+margin-top:45px;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0px 5px 15px rgba(0,0,0,.12);
+
+}
+
+.estrellas h2{
+
+text-align:center;
+font-size:32px;
+margin-bottom:30px;
+color:#555;
+
+}
+
+.card{
+
+background:#f4f4f4;
+margin-bottom:25px;
+padding:20px;
+border-left:8px solid #999;
+border-radius:10px;
+
+}
+
+.card h3{
+
+font-size:25px;
+margin-bottom:10px;
+
+}
+
+.star{
+
+font-size:35px;
+color:gold;
+margin-bottom:10px;
+
+}
+
+.card p{
+
+font-size:18px;
+line-height:28px;
+
+}
+
+footer{
+
+margin-top:50px;
+background:#ececec;
+padding:25px;
+text-align:center;
+font-size:17px;
+
+}
+
+#fecha{
+
+font-weight:bold;
+
+}
+
+@media(max-width:900px){
+
+.biografia{
+
+flex-direction:column;
+
+}
+
+.foto img{
+
+width:220px;
+height:250px;
+
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<!-- ================= MENU ================= -->
-
 <header>
 
-<nav>
+<!-- CAMBIA ESTA RUTA POR LA DEL LOGO -->
+<img src="https://gaceta.utc.edu.ec/wp-content/uploads/2021/10/logo-utc.png" alt="Logo UTC">
 
-<div class="logo">
+<h1>Universidad Técnica de Cotopaxi</h1>
 
-<img src="https://gaceta.utc.edu.ec/" alt="Logo UTC">
-
-</div>
-
-<ul>
-
-<li><a href="index.html" class="activo">Inicio</a></li>
-
-<li><a href="biografia.html">Biografía</a></li>
-
-<li><a href="evaluacion.html">Evaluación</a></li>
-
-<li><a href="contacto.html">Contacto</a></li>
-
-</ul>
-
-</nav>
+<p>Portafolio Personal</p>
 
 </header>
 
-<!-- ================= HERO ================= -->
+<div class="container">
 
-<section class="hero">
+<section class="biografia">
 
-<div class="hero-texto">
+<div class="foto">
 
-<h1>
+<!-- Cambia por tu fotografía -->
 
-Universidad Técnica de Cotopaxi
-
-</h1>
-
-<h2>
-
-Portafolio Académico
-
-</h2>
-
-<p>
-
-Bienvenido a mi sitio web.
-
-En este espacio podrás conocer un poco sobre mí,
-
-mi trayectoria académica y la valoración realizada
-
-sobre las tres unidades desarrolladas durante el curso.
-
-</p>
-
-<a href="biografia.html">
-
-<button>
-
-Conocer más
-
-</button>
-
-</a>
+<img src="https://via.placeholder.com/300x350.png?text=Mi+Fotografia">
 
 </div>
 
-<div class="hero-imagen">
+<div class="info">
 
-<img src="img/logo.png" alt="UTC">
+<h2>Mi Biografía</h2>
+
+<p>
+
+Mi nombre es <b>Josué Neptalí Salguero Congo</b>.
+
+Actualmente soy estudiante de la Universidad Técnica de Cotopaxi y me encuentro desarrollando habilidades en programación, diseño web y desarrollo de software.
+
+Durante mi formación he aprendido a utilizar HTML, CSS, JavaScript y Python para crear proyectos interactivos y fortalecer mis conocimientos tecnológicos.
+
+Me considero una persona responsable, perseverante y con muchas ganas de seguir aprendiendo.
+
+</p>
+
+<br>
+
+<h2>Lo que espero en el futuro</h2>
+
+<p>
+
+Mi objetivo es convertirme en un profesional altamente capacitado en el área del desarrollo de software, participar en proyectos innovadores y contribuir al crecimiento tecnológico de mi país.
+
+Deseo continuar fortaleciendo mis conocimientos, aprender nuevas tecnologías y desarrollar aplicaciones que generen un impacto positivo en la sociedad.
+
+</p>
 
 </div>
 
 </section>
 
-<!-- ================= TARJETAS ================= -->
+<section class="estrellas">
 
-<section class="info">
+<h2>Evaluación de las Unidades</h2>
 
 <div class="card">
 
-<h2>Biografía</h2>
+<h3>Unidad 1</h3>
+
+<div class="star">
+
+★★★★☆
+
+</div>
 
 <p>
 
-Conoce mi perfil académico,
-
-mis intereses y objetivos profesionales.
+Excelente introducción a la asignatura. Los contenidos fueron claros y permitieron comprender los fundamentos necesarios para avanzar con seguridad durante el curso.
 
 </p>
-
-<a href="biografia.html">
-
-<button>
-
-Ver Biografía
-
-</button>
-
-</a>
 
 </div>
 
 <div class="card">
 
-<h2>Evaluación</h2>
+<h3>Unidad 2</h3>
+
+<div class="star">
+
+★★★★☆
+
+</div>
 
 <p>
 
-Observa la calificación de las
-
-tres unidades del curso mediante
-
-un sistema de estrellas.
+Las actividades fortalecieron el pensamiento lógico y la resolución de problemas. La práctica constante permitió mejorar las habilidades de programación.
 
 </p>
-
-<a href="evaluacion.html">
-
-<button>
-
-Ver Evaluación
-
-</button>
-
-</a>
 
 </div>
 
 <div class="card">
 
-<h2>Contacto</h2>
+<h3>Unidad 3</h3>
+
+<div class="star">
+
+★★★★☆
+
+</div>
 
 <p>
 
-Encuentra mis redes sociales,
-
-correo electrónico y demás
-
-medios de contacto.
+Fue una unidad muy interesante donde se integraron los conocimientos adquiridos previamente para desarrollar proyectos más completos y creativos.
 
 </p>
-
-<a href="contacto.html">
-
-<button>
-
-Contactarme
-
-</button>
-
-</a>
 
 </div>
 
 </section>
 
-<!-- ================= FRASE ================= -->
-
-<section class="frase">
-
-<h2>
-
-"La educación es el pasaporte hacia el futuro, porque el mañana pertenece a quienes se preparan para él hoy."
-
-</h2>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
+</div>
 
 <footer>
 
 <p>
 
-© 2026 Universidad Técnica de Cotopaxi
+Universidad Técnica de Cotopaxi © <span id="year"></span>
 
 </p>
 
 <p>
 
-Desarrollado por:
+Fecha actual:
 
-<strong>Tu Nombre</strong>
+<span id="fecha"></span>
 
 </p>
 
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+
+const fecha = new Date();
+
+document.getElementById("year").innerHTML = fecha.getFullYear();
+
+document.getElementById("fecha").innerHTML = fecha.toLocaleDateString('es-EC',{
+weekday:'long',
+year:'numeric',
+month:'long',
+day:'numeric'
+});
+
+</script>
 
 </body>
 

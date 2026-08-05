@@ -1,73 +1,154 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Portafolio</title>
+<title>Evaluación de Unidades - UTC Ecuador</title>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f4f6f9;
-    color:#333;
+background:linear-gradient(135deg,#003366,#00509d);
+color:white;
 }
 
 header{
-    background:linear-gradient(135deg,#0d6efd,#0dcaf0);
-    color:white;
-    text-align:center;
-    padding:40px;
+text-align:center;
+padding:30px;
+}
+
+header img{
+width:220px;
+filter:drop-shadow(0px 5px 10px rgba(0,0,0,.4));
 }
 
 header h1{
-    font-size:40px;
+margin-top:15px;
+font-size:40px;
 }
 
-.container{
-    width:90%;
-    max-width:1000px;
-    margin:auto;
-    padding:30px;
+.contenedor{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.perfil{
+display:flex;
+gap:30px;
+background:white;
+color:#222;
+border-radius:20px;
+padding:25px;
+align-items:center;
+box-shadow:0 10px 20px rgba(0,0,0,.25);
+margin-bottom:40px;
+flex-wrap:wrap;
+}
+
+.foto{
+width:250px;
+height:250px;
+border-radius:20px;
+overflow:hidden;
+border:5px solid #00509d;
+}
+
+.foto img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.bio{
+flex:1;
+}
+
+.bio h2{
+color:#003366;
+margin-bottom:15px;
+}
+
+.bio p{
+font-size:18px;
+line-height:1.7;
+}
+
+.unidades{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 }
 
 .card{
-    background:white;
-    margin-bottom:25px;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 12px rgba(0,0,0,.15);
+background:white;
+color:#333;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.3);
+transition:.4s;
 }
 
-h2{
-    color:#0d6efd;
-    margin-bottom:15px;
+.card:hover{
+transform:translateY(-10px);
 }
 
-.stars{
-    color:gold;
-    font-size:25px;
-    margin:10px 0;
+.card h2{
+text-align:center;
+margin-bottom:15px;
+color:#003366;
 }
 
-.contact a{
-    display:block;
-    text-decoration:none;
-    color:#0d6efd;
-    margin:10px 0;
-    font-size:18px;
+.estrellas{
+font-size:35px;
+text-align:center;
+color:gold;
+margin-bottom:15px;
+}
+
+.comentario{
+font-size:17px;
+text-align:justify;
+line-height:1.6;
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    background:#0d6efd;
-    color:white;
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:#001f3f;
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#00509d;
+color:white;
+font-size:17px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#0074d9;
+}
+
+.oculto{
+display:none;
+margin-top:15px;
+background:#eef5ff;
+padding:15px;
+border-radius:10px;
+color:#003366;
+font-weight:bold;
 }
 </style>
 
@@ -76,80 +157,94 @@ footer{
 <body>
 
 <header>
-<h1>👋 Tu Nombre</h1>
-<p>Estudiante | Programador | Desarrollador</p>
+
+<!-- CAMBIA ESTA URL POR EL LOGO OFICIAL DE LA UTC -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Logo UTC">
+
+<h1>Universidad Técnica de Cotopaxi</h1>
+
 </header>
 
-<div class="container">
+<div class="contenedor">
 
-<div class="card">
-<h2>📖 Biografía</h2>
+<div class="perfil">
+
+<div class="foto">
+
+<!-- CAMBIA ESTA IMAGEN POR TU FOTO -->
+<img src="https://via.placeholder.com/300x300.png?text=Mi+Foto">
+
+</div>
+
+<div class="bio">
+
+<h2>Mi Biografía</h2>
 
 <p>
-Escribe aquí una pequeña descripción sobre ti.
-Puedes contar quién eres, qué estudias, qué tecnologías te gustan y cuáles son tus objetivos.
+
+Soy estudiante de la Universidad Técnica de Cotopaxi, comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades tecnológicas. Me interesa la programación, el desarrollo web y la creación de proyectos innovadores. Este espacio presenta una valoración personal sobre las tres unidades desarrolladas durante el curso.
+
 </p>
 
+<button onclick="mensaje()">Ver mensaje</button>
+
+<div class="oculto" id="mensaje">
+¡Gracias por visitar mi página! Espero que esta evaluación sea de su agrado.
 </div>
+
+</div>
+
+</div>
+
+<div class="unidades">
 
 <div class="card">
 
-<h2>⭐ Evaluación de la Unidad 1</h2>
+<h2>⭐ Unidad 1</h2>
 
-<div class="stars">
-★★★★★
-</div>
-
-<p>
-Escribe aquí tu criterio sobre la Unidad 1.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>⭐ Evaluación de la Unidad 2</h2>
-
-<div class="stars">
+<div class="estrellas">
 ★★★★☆
 </div>
 
-<p>
-Escribe aquí tu criterio sobre la Unidad 2.
-</p>
+<div class="comentario">
+
+La primera unidad permitió comprender los conceptos fundamentales de la asignatura. Las actividades fueron claras, organizadas y facilitaron un aprendizaje progresivo, fortaleciendo las bases necesarias para continuar con el curso.
+
+</div>
 
 </div>
 
 <div class="card">
 
-<h2>⭐ Evaluación de la Unidad 3</h2>
+<h2>⭐ Unidad 2</h2>
 
-<div class="stars">
-★★★★★
+<div class="estrellas">
+★★★★☆
 </div>
 
-<p>
-Escribe aquí tu criterio sobre la Unidad 3.
-</p>
+<div class="comentario">
+
+Durante esta unidad se desarrollaron ejercicios prácticos que fortalecieron el pensamiento lógico y la resolución de problemas. Los contenidos fueron interesantes y contribuyeron significativamente al desarrollo de nuevas habilidades.
 
 </div>
 
-<div class="card contact">
+</div>
 
-<h2>📬 Contacto</h2>
+<div class="card">
 
-<a href="mailto:tucorreo@gmail.com">📧 tucorreo@gmail.com</a>
+<h2>⭐ Unidad 3</h2>
 
-<a href="https://github.com/TU_USUARIO" target="_blank">
-🐙 GitHub
-</a>
+<div class="estrellas">
+★★★★☆
+</div>
 
-<a href="https://linkedin.com/in/TU_USUARIO" target="_blank">
+<div class="comentario">
 
-</a>
+La tercera unidad integró todos los conocimientos adquiridos anteriormente mediante proyectos y actividades dinámicas. Fue una excelente oportunidad para aplicar lo aprendido y mejorar las competencias técnicas.
 
-<a href="https://facebook.com/TU_USUARIO" target="_blank">
-</a>
+</div>
+
+</div>
 
 </div>
 
@@ -157,8 +252,43 @@ Escribe aquí tu criterio sobre la Unidad 3.
 
 <footer>
 
+© 2026 - Universidad Técnica de Cotopaxi | Elaborado por: Tu Nombre
 
 </footer>
+
+<script>
+
+function mensaje(){
+
+document.getElementById("mensaje").classList.toggle("oculto");
+
+}
+
+window.onload=function(){
+
+const cards=document.querySelectorAll(".card");
+
+cards.forEach((card,i)=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(50px)";
+
+setTimeout(()=>{
+
+card.style.transition="1s";
+
+card.style.opacity="1";
+
+card.style.transform="translateY(0px)";
+
+},i*300);
+
+});
+
+}
+
+</script>
 
 </body>
 </html>

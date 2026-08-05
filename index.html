@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Académico | Josue Neptalí Salguero Congo</title>
 
-<title>Portafolio Académico - UTC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
 <style>
 
@@ -13,194 +15,267 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-
-background:#f7f5ef;
-color:#333;
-
+background:#F7F4EF;
+color:#222;
 }
-
-/* Encabezado */
 
 header{
-
-background:#ececec;
-padding:30px;
+background:#202020;
+padding:25px;
+color:white;
 text-align:center;
-box-shadow:0px 3px 8px rgba(0,0,0,.2);
-
-}
-
-header img{
-
-width:220px;
-margin-bottom:15px;
-
+position:sticky;
+top:0;
+z-index:100;
 }
 
 header h1{
-
-font-size:38px;
-color:#444;
-
+font-size:40px;
 }
 
-header p{
-
-font-size:18px;
-color:#666;
-
+nav{
+margin-top:20px;
 }
 
-/* Contenedor */
-
-.container{
-
-width:90%;
-max-width:1200px;
-margin:auto;
-margin-top:40px;
-
+nav a{
+text-decoration:none;
+color:white;
+margin:15px;
+font-weight:bold;
+transition:.3s;
 }
 
-/* Primera Sección */
+nav a:hover{
+color:#D4AF37;
+}
 
-.biografia{
+.hero{
 
 display:flex;
-gap:40px;
-background:white;
-padding:35px;
-border-radius:15px;
-box-shadow:0px 5px 15px rgba(0,0,0,.12);
+justify-content:center;
+align-items:center;
+padding:80px;
+gap:60px;
+flex-wrap:wrap;
 
 }
 
 .foto{
 
-flex:1;
-text-align:center;
+width:320px;
+height:320px;
+border-radius:20px;
+background:#ddd;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+box-shadow:0 0 25px rgba(0,0,0,.25);
 
 }
 
 .foto img{
 
-width:280px;
-height:320px;
-border-radius:15px;
+width:100%;
+height:100%;
 object-fit:cover;
-border:6px solid #d9d9d9;
 
 }
 
 .info{
 
-flex:2;
+max-width:650px;
 
 }
 
 .info h2{
 
-font-size:32px;
-margin-bottom:20px;
-color:#555;
+font-size:42px;
+margin-bottom:15px;
 
 }
 
 .info p{
 
 font-size:18px;
-line-height:32px;
-text-align:justify;
+line-height:35px;
 
 }
 
-/* Segunda sección */
+button{
+
+padding:15px 40px;
+margin-top:30px;
+font-size:18px;
+background:#202020;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:8px;
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#D4AF37;
+
+}
+
+section{
+
+padding:70px;
+
+}
+
+.titulo{
+
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+
+}
+
+.bio{
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:40px;
+
+}
+
+.bio div{
+
+max-width:900px;
+
+}
+
+.bio p{
+
+line-height:35px;
+font-size:18px;
+
+}
 
 .estrellas{
 
-margin-top:45px;
-background:white;
-padding:35px;
-border-radius:15px;
-box-shadow:0px 5px 15px rgba(0,0,0,.12);
-
-}
-
-.estrellas h2{
-
-text-align:center;
-font-size:32px;
-margin-bottom:30px;
-color:#555;
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
 
 }
 
 .card{
 
-background:#f4f4f4;
-margin-bottom:25px;
-padding:20px;
-border-left:8px solid #999;
-border-radius:10px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+width:330px;
+text-align:center;
 
 }
 
 .card h3{
 
-font-size:25px;
-margin-bottom:10px;
+margin-bottom:20px;
 
 }
 
 .star{
 
-font-size:35px;
-color:gold;
-margin-bottom:10px;
+font-size:40px;
+cursor:pointer;
+color:#ccc;
 
 }
 
-.card p{
+.star.active{
 
-font-size:18px;
-line-height:28px;
+color:gold;
+
+}
+
+textarea{
+
+width:100%;
+height:130px;
+margin-top:20px;
+padding:15px;
+resize:none;
+font-size:16px;
+
+}
+
+.unidades{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+
+}
+
+.unidad{
+
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+
+}
+
+.unidad h2{
+
+margin-bottom:20px;
+
+}
+
+.unidad input{
+
+margin:15px 0;
+
+}
+
+.redes{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+
+}
+
+.red{
+
+background:white;
+padding:30px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+
+}
+
+.red input{
+
+width:100%;
+padding:10px;
+margin-top:15px;
 
 }
 
 footer{
 
-margin-top:50px;
-background:#ececec;
-padding:25px;
+background:#202020;
+color:white;
+padding:40px;
 text-align:center;
-font-size:17px;
-
-}
-
-#fecha{
-
-font-weight:bold;
-
-}
-
-@media(max-width:900px){
-
-.biografia{
-
-flex-direction:column;
-
-}
-
-.foto img{
-
-width:220px;
-height:250px;
-
-}
 
 }
 
@@ -212,132 +287,261 @@ height:250px;
 
 <header>
 
-<!-- CAMBIA ESTA RUTA POR LA DEL LOGO -->
-<img src="https://gaceta.utc.edu.ec/wp-content/uploads/2021/10/logo-utc.png" alt="Logo UTC">
+<h1>UNIVERSIDAD TÉCNICA DE COTOPAXI</h1>
 
-<h1>Universidad Técnica de Cotopaxi</h1>
+<h2>PORTAFOLIO ACADÉMICO</h2>
 
-<p>Portafolio Personal</p>
+<nav>
+
+<a href="#bio">Biografía</a>
+
+<a href="#unidad1">Unidad 1</a>
+
+<a href="#unidad2">Unidad 2</a>
+
+<a href="#unidad3">Unidad 3</a>
+
+<a href="#redes">Redes Sociales</a>
+
+</nav>
 
 </header>
 
-<div class="container">
-
-<section class="biografia">
+<section class="hero">
 
 <div class="foto">
 
-<!-- Cambia por tu fotografía -->
-
-<img src="https://via.placeholder.com/300x350.png?text=Mi+Fotografia">
+<img src="https://gaceta.utc.edu.ec/wp-content/uploads/2022/07/cropped-logo-utc.png">
 
 </div>
 
 <div class="info">
 
-<h2>Mi Biografía</h2>
+<h2>Josue Neptalí Salguero Congo</h2>
+
+<h3>Nivelación - Universidad Técnica de Cotopaxi</h3>
 
 <p>
 
-Mi nombre es <b>Josué Neptalí Salguero Congo</b>.
+Bienvenido a mi portafolio académico.
 
-Actualmente soy estudiante de la Universidad Técnica de Cotopaxi y durante este tiempo he adquirido conocimientos fundamentales en programación
-diseño web y desarrollo de software, aprendiendo a utilizar tecnologías como HTML, CSS, JavaScript y Python para crear proyectos interactivos 
-y fortalecer mis habilidades técnicas.
+Aquí podrás conocer mi biografía, las actividades desarrolladas durante las unidades, mis proyectos, calificaciones y redes sociales.
 
 </p>
+
+<button>Explorar Portafolio</button>
+
+</div>
+
+</section>
+
+<section id="bio">
+
+<h1 class="titulo">
+
+BIOGRAFÍA
+
+</h1>
+
+<div class="bio">
+
+<div>
+
+<p>
+
+Actualmente soy estudiante de la Universidad Técnica de Cotopaxi y durante este tiempo he adquirido conocimientos fundamentales en programación, diseño web y desarrollo de software, aprendiendo a utilizar tecnologías como HTML, CSS, JavaScript y Python para crear proyectos interactivos y fortalecer mis habilidades técnicas.
+
+<br><br>
+
+Me considero una persona responsable, perseverante y con muchas ganas de seguir aprendiendo para fortalecer mis conocimientos y afrontar nuevos retos tecnológicos.
+
+<br><br>
+
+<h2>
+
+Lo que espero en el futuro
+
+</h2>
 
 <br>
 
-<h2>Lo que espero en el futuro</h2>
-
-<p>
-
 A futuro, uno de mis mayores sueños es convertirme en desarrollador de videojuegos, una disciplina que combina creatividad, innovación y tecnología.
+
 Me gustaría tener la oportunidad de formar parte del equipo de Wildcard Games, aportando con mis conocimientos y aprendiendo de profesionales del sector.
-Aunque esta es una de mis metas más importantes, también deseo mantener el desarrollo de videojuegos como un proyecto personal y un hobby que me permita seguir 
-creando y explorando nuevas ideas mientras continúo creciendo en otras áreas del desarrollo de software.
+
+Aunque esta es una de mis metas más importantes, también deseo mantener el desarrollo de videojuegos como un proyecto personal y un hobby que me permita seguir creando nuevas experiencias mientras continúo creciendo como desarrollador de software.
+
 </p>
+
+</div>
 
 </div>
 
 </section>
 
-<section class="estrellas">
+<section>
 
-<h2>Evaluación de las Unidades</h2>
+<h1 class="titulo">
 
-<div class="card">
+CALIFICACIÓN DE LAS UNIDADES
 
-<h3>Unidad 1</h3>
+</h1>
 
-<div class="star">
-
-★★★★☆
-
-</div>
-
-<p>
-
-Excelente introducción a la asignatura. Los contenidos fueron claros y permitieron comprender los fundamentos necesarios para avanzar con seguridad durante el curso.
-
-</p>
-
-</div>
+<div class="estrellas">
 
 <div class="card">
 
-<h3>Unidad 2</h3>
+<h3>UNIDAD 1</h3>
 
-<div class="star">
+<div class="rating"></div>
 
-★★★★☆
-
-</div>
-
-<p>
-
-Las actividades fortalecieron el pensamiento lógico y la resolución de problemas. La práctica constante permitió mejorar las habilidades de programación.
-
-</p>
+<textarea placeholder="Escribe tu criterio de la Unidad 1"></textarea>
 
 </div>
 
 <div class="card">
 
-<h3>Unidad 3</h3>
+<h3>UNIDAD 2</h3>
 
-<div class="star">
+<div class="rating"></div>
 
-★★★★☆
+<textarea placeholder="Escribe tu criterio de la Unidad 2"></textarea>
 
 </div>
 
-<p>
+<div class="card">
 
-Fue una unidad muy interesante donde se integraron los conocimientos adquiridos previamente para desarrollar proyectos más completos y creativos.
+<h3>UNIDAD 3</h3>
 
-</p>
+<div class="rating"></div>
+
+<textarea placeholder="Escribe tu criterio de la Unidad 3"></textarea>
+
+</div>
 
 </div>
 
 </section>
 
+<section id="unidad1">
+
+<div class="unidad">
+
+<h2>UNIDAD 1</h2>
+
+<input type="file">
+
+<input type="file">
+
+<input type="file">
+
+<textarea placeholder="Conclusión"></textarea>
+
 </div>
+
+</section>
+
+<section id="unidad2">
+
+<div class="unidad">
+
+<h2>UNIDAD 2</h2>
+
+<input type="file">
+
+<input type="file">
+
+<input type="file">
+
+<textarea placeholder="Conclusión"></textarea>
+
+</div>
+
+</section>
+
+<section id="unidad3">
+
+<div class="unidad">
+
+<h2>UNIDAD 3</h2>
+
+<input type="file">
+
+<input type="file">
+
+<input type="file">
+
+<textarea placeholder="Conclusión"></textarea>
+
+</div>
+
+</section>
+
+<section id="redes">
+
+<h1 class="titulo">
+
+REDES SOCIALES
+
+</h1>
+
+<div class="redes">
+
+<div class="red">
+
+<h2>Facebook</h2>
+
+<input placeholder="Pega tu enlace">
+
+</div>
+
+<div class="red">
+
+<h2>Instagram</h2>
+
+<input placeholder="Pega tu enlace">
+
+</div>
+
+<div class="red">
+
+<h2>GitHub</h2>
+
+<input placeholder="Pega tu enlace">
+
+</div>
+
+<div class="red">
+
+<h2>LinkedIn</h2>
+
+<input placeholder="Pega tu enlace">
+
+</div>
+
+<div class="red">
+
+<h2>Correo</h2>
+
+<input placeholder="correo@ejemplo.com">
+
+</div>
+
+</div>
+
+</section>
 
 <footer>
 
+<h2>
+
+Josue Neptalí Salguero Congo
+
+</h2>
+
 <p>
 
-Universidad Técnica de Cotopaxi © <span id="year"></span>
-
-</p>
-
-<p>
-
-Fecha actual:
-
-<span id="fecha"></span>
+Universidad Técnica de Cotopaxi • Ingeniería en Software
 
 </p>
 
@@ -345,15 +549,30 @@ Fecha actual:
 
 <script>
 
-const fecha = new Date();
+document.querySelectorAll(".rating").forEach(r=>{
 
-document.getElementById("year").innerHTML = fecha.getFullYear();
+for(let i=1;i<=5;i++){
 
-document.getElementById("fecha").innerHTML = fecha.toLocaleDateString('es-EC',{
-weekday:'long',
-year:'numeric',
-month:'long',
-day:'numeric'
+const s=document.createElement("span");
+
+s.innerHTML="★";
+
+s.className="star";
+
+s.onclick=()=>{
+
+[...r.children].forEach((e,j)=>{
+
+e.classList.toggle("active",j<i);
+
+});
+
+};
+
+r.appendChild(s);
+
+}
+
 });
 
 </script>

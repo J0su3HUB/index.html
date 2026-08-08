@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Académico</title>
+    <style>
+        /* Variables y Reseteo */
+        :root {
+            --bg-color: #f5f3ef;
+            --text-color: #333;
+            --header-bg: #1a1a1a;
+            --card-1: #5adee3;
+            --card-2: #fa4f3c;
+            --card-3: #40e656;
+        }
+        body { 
+            margin: 0; 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+            overflow-x: hidden;
+        }
+        
+        /* Encabezado Principal */
+        header { 
+            background-color: var(--header-bg); 
+            color: white; 
+            text-align: center; 
+            padding: 2.5rem 1rem 1.5rem; 
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 2.2rem; 
+            letter-spacing: 1px; 
+            text-transform: uppercase;
+        }
+        header h2 { 
+            margin: 0.5rem 0 1.5rem; 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            letter-spacing: 2px; 
+        }
+        nav { 
+            display: flex; 
+            justify-content: center; 
+            gap: 2.5rem; 
+            flex-wrap: wrap; 
+        }
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1rem; 
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #ea6e6e; }
+
+        /* Sección Hero / Perfil */
+        .hero { 
+            display: flex; 
+            justify-content: center; 
+            align-items: flex-start; 
+            max-width: 1000px; 
+            margin: 4rem auto; 
+            gap: 4rem; 
+            padding: 0 2rem; 
+        }
+        .hero-img { 
+            width: 320px; 
+            height: 380px; 
+            background-color: #e0e0e0; 
+            border-radius: 15px; 
+            flex-shrink: 0; 
+            object-fit: cover; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .hero-text { max-width: 550px; padding-top: 1rem; }
+        .hero-text h3 { 
+            font-size: 2.5rem; 
+            margin: 0 0 0.5rem; 
+            color: #1a1a1a; 
+        }
+        .hero-text h4 { 
+            font-size: 1.1rem; 
+            margin: 0 0 1.5rem; 
+            color: #333; 
+            font-weight: 600;
+        }
+        .hero-text p { 
+            font-size: 1.1rem; 
+            line-height: 1.7; 
+            color: #555; 
+            margin-bottom: 2rem; 
+        }
+        .btn-explore { 
+            background-color: #222; 
+            color: white; 
+            padding: 0.8rem 1.8rem; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            text-decoration: none; 
+            display: inline-block; 
+            transition: background-color 0.3s;
+        }
+        .btn-explore:hover { background-color: #444; }
+
+        /* Sección Biografía */
+        .biography { 
+            max-width: 800px; 
+            margin: 0 auto 5rem; 
+            padding: 0 2rem; 
+        }
+        .biography h2 { 
+            text-align: center; 
+            font-size: 2.2rem; 
+            color: #1a1a1a; 
+            margin-bottom: 2.5rem; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .biography p { 
+            font-size: 1.1rem; 
+            line-height: 1.8; 
+            color: #444; 
+            margin-bottom: 1.5rem; 
+        }
+        .biography h3 { 
+            font-size: 1.4rem; 
+            color: #1a1a1a; 
+            margin-top: 2.5rem; 
+            margin-bottom: 1rem; 
+        }
+
+        /* Sección de Unidades (Estilo Galáctico) */
+        .units-section {
+            background-color: #fff;
+            background-image: url('https://media.istockphoto.com/id/1156963538/es/vector/patr%C3%B3n-sin-costuras-con-coloridos-planetas-de-garabatos-y-estrellas-sobre-fondo-blanco.jpg?b=1&s=612x612&w=0&k=20&c=ISy5WI7CTDRbzUkI3Mh3SE5Fzfs4uOmkaau7dOP7Z2Y=');
+            background-size: 20%;
+            padding: 5rem 2rem;
+            border-top: 10px solid white;
+            border-bottom: 10px solid white;
+            position: relative;
+        }
+        .units-header-container { text-align: center; margin-bottom: 3rem; }
+        .units-title { 
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.95); 
+            padding: 1rem 3rem; 
+            border-radius: 50px; 
+            font-size: 2.2rem; 
+            font-weight: bold;
+            color: #1a1a1a;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .menu { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 30px; 
+            max-width: 1200px; 
+            margin: auto; 
+        }
+        .menu-item { 
+            background: white; 
+            border-radius: 15px; 
+            display: flex; 
+            flex-direction: column; 
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+            overflow: hidden; 
+            text-decoration: none; 
+            color: #222; 
+            border: 4px solid #ffffff; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .menu-item:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); 
+        }
+        .menu-item-inner { 
+            width: 100%; 
+            height: 220px; 
+        }
+        .menu-item-inner img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            border-bottom: 4px solid #f5f5f5;
+        }
+        .menu-item-content { 
+            padding: 1.8rem; 
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu-item-title { 
+            font-size: 1.6rem; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        }
+        
+        /* Estrellas y Temas manuales */
+        .stars {
+            color: #FFD700;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        .themes-box {
+            width: 100%;
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: left;
+            margin-top: auto;
+        }
+        .themes-box h5 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #1a1a1a;
+        }
+        .themes-box ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Colores de las tarjetas */
+        .menu-item.unit-1 .menu-item-title { color: #158b90; }
+        .menu-item.unit-1 { border-bottom: 8px solid var(--card-1); }
+        .menu-item.unit-2 .menu-item-title { color: #c42b1a; }
+        .menu-item.unit-2 { border-bottom: 8px solid var(--card-2); }
+        .menu-item.unit-3 .menu-item-title { color: #21a133; }
+        .menu-item.unit-3 { border-bottom: 8px solid var(--card-3); }
+
+        /* Pie de Página */
+        footer { 
+            background-color: #1a1a1a; 
+            color: white; 
+            padding: 2rem; 
+            text-align: center; 
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 850px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; padding: 0 1.5rem; gap: 2rem; }
+            .hero-img { width: 100%; max-width: 320px; height: auto; aspect-ratio: 4/5; }
+            .biography { padding: 0 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Universidad Técnica de Cotopaxi</h1>
+        <h2>PORTAFOLIO ACADÉMICO</h2>
+        <nav>
+            <a href="#biografia">Biografía</a>
+            <a href="#unidades">Unidades</a>
+            <a href="#unidad1">Unidad 1</a>
+            <a href="#unidad2">Unidad 2</a>
+            <a href="#unidad3">Unidad 3</a>
+            <a href="#redes">Redes Sociales</a>
+        </nav>
+    </header>
+
+    <!-- Sección de Perfil / Hero -->
+    <section class="hero" id="perfil">
+        <img class="hero-img" src="carlos.png" alt="Foto de Perfil" onerror="this.src='https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=500&auto=format&fit=crop&q=60'">
+        <div class="hero-text">
+            <h3>Josue Neptalí Salguero Congo</h3>
+            <h4>Nivelación – Universidad Técnica de Cotopaxi</h4>
+            <p>Bienvenido a mi portafolio académico. Aquí podrás conocer mi biografía, las actividades desarrolladas durante las unidades, mis proyectos, calificaciones y redes sociales, así como mi recorrido en el mundo del aprendizaje y la tecnología.</p>
+            <a href="#unidades" class="btn-explore">Explorar Portafolio</a>
+        </div>
+    </section>
+
+    <!-- Sección de Biografía Completa -->
+    <section class="biography" id="biografia">
+        <h2>Biografía</h2>
+        <p>Actualmente soy estudiante de la Universidad Técnica de Cotopaxi y durante este tiempo he adquirido conocimientos fundamentales en programación, diseño web y desarrollo de software, aprendiendo a utilizar tecnologías como HTML, CSS, JavaScript y Python para crear proyectos interactivos y fortalecer mis habilidades técnicas.</p>
+        <p>La <strong>Ingeniería de Software</strong> es la disciplina que aplica principios y métodos para diseñar, desarrollar, probar y mantener software de forma organizada y eficiente. Mi objetivo es crear programas y sistemas de calidad que sean funcionales, seguros, confiables y respondan a las necesidades de los usuarios. Me considero una persona responsable, perseverante y con muchas ganas de seguir aprendiendo para afrontar nuevos retos tecnológicos.</p>
+        
+        <h3>Lo que espero en el futuro</h3>
+        <p>A futuro, uno de mis mayores sueños es convertirme en desarrollador de videojuegos, una disciplina que combina creatividad, innovación y tecnología. Me gustaría tener la oportunidad de formar parte de equipos destacados, aportando con mis conocimientos y aprendiendo de profesionales del sector. Aunque esta es una de mis metas más importantes, también deseo mantener el desarrollo de aplicaciones como un proyecto personal y un hobby que me permita seguir creando nuevas experiencias mientras continúo creciendo como desarrollador de software.</p>
+    </section>
+
+    <!-- Sección de Unidades -->
+    <section class="units-section" id="unidades">
+        <div class="units-header-container">
+            <h2 class="units-title">Unidades de Estudio</h2>
+        </div>
+        <div class="menu">
+            <!-- Tarjeta Unidad 1 -->
+            <a href="unidad1.html" class="menu-item unit-1" id="unidad1">
+                <div class="menu-item-inner">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/003/019/310/small_2x/young-girl-studying-at-her-room-concept-free-vector.jpg" alt="Unidad 1">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-title">Unidad 1</div>
+                    <div class="stars">★★★★★</div>
+                    <div class="themes-box">
+                        <h5>Temas:</h5>
+                        <ul>
+                            <li>Modelo de Von Neumann y Harvard</li>
+                            <li>Sistemas de numeración y conversiones: Binario, Octal y Hexadecimal</li>
+                            <li>Comparativo, Cuadro sinóptico, Exposición</li>
+                            <li>Lluvia de ideas, Preguntas guía, Aritmética</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Tarjeta Unidad 2 -->
+            <a href="unidad2.html" class="menu-item unit-2" id="unidad2">
+                <div class="menu-item-inner">
+                    <img src="https://img.freepik.com/vector-premium/ilustracion-avion_961307-16864.jpg" alt="Unidad 2">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-title">Unidad 2</div>
+                    <div class="stars">★★★★☆</div>
+                    <div class="themes-box">
+                        <h5>Temas:</h5>
+                        <ul>
+                            <li>Algoritmos y sus características</li>
+                            <li>Los diagramas de flujo como herramienta de modelación de algoritmos</li>
+                            <li>Pseudocódigo: Una herramienta de palabras útil</li>
+                            <li>Modelado de problemas</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Tarjeta Unidad 3 -->
+            <a href="unidad3.html" class="menu-item unit-3" id="unidad3">
+                <div class="menu-item-inner">
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/916/481/non_2x/big-isolated-cartoon-character-illustration-of-cute-kids-reading-book-and-learning-and-discovering-new-vector.jpg" alt="Unidad 3">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-title">Unidad 3</div>
+                    <div class="stars">★★★★★</div>
+                    <div class="themes-box">
+                        <h5>Temas:</h5>
+                        <ul>
+                            <li>Lenguajes y paradigmas de programación</li>
+                            <li>Discusión guiada, Ficha técnica, Lluvia de ideas</li>
+                            <li>Portafolio, Preguntas guía</li>
+                            <li>Programación, Álgebra de Boole</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="redes">
+        <p>© 2025 Universidad Técnica de Cotopaxi. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

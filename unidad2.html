@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 2 · Algoritmos y modelado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="unit-page-header">
+    <div class="inner">
+      <a class="back" href="index.html">← Portafolio</a>
+      <h1>Unidad 2: Algoritmos y modelado de problemas</h1>
+      <p class="subtitle">Pensamiento computacional</p>
+    </div>
+    <div class="gold-bar"></div>
+  </header>
+
+  <main class="unit-content">
+
+    <div class="intro-block">
+      <p>
+        En esta unidad aprenderemos cómo resolver problemas utilizando el
+        pensamiento lógico. Antes de escribir un programa es importante
+        analizar el problema, planificar una solución y representarla mediante
+        herramientas como algoritmos, diagramas de flujo y pseudocódigo.
+      </p>
+      <p class="objetivo"><strong>Objetivo:</strong> aprender a transformar un problema en una solución estructurada, comprensible y aplicable a la programación.</p>
+    </div>
+
+    <!-- Tema 1 -->
+    <article class="topic">
+      <div class="topic-number">Tema 1</div>
+      <h2>Algoritmos y sus características</h2>
+      <p class="explanation">
+        Un <strong>algoritmo</strong> es una secuencia ordenada de pasos que
+        permite resolver un problema o realizar una tarea. Describe cómo debe
+        ejecutarse una solución y es la base de todo programa.
+      </p>
+      <ul>
+        <li>¿Qué es un algoritmo?</li>
+        <li>¿Para qué sirve un algoritmo?</li>
+        <li>Características de un algoritmo</li>
+        <li>Entrada · Proceso · Salida</li>
+        <li>Algoritmos cotidianos</li>
+        <li>Importancia de los algoritmos en la programación</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo — Preparar café</div>
+        <p>
+          1. Calentar agua<br>
+          2. Colocar el café en la taza<br>
+          3. Agregar el agua caliente<br>
+          4. Remover y servir
+        </p>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Escribe un algoritmo (entre 5 y 8 pasos) para <strong>calcular el promedio de tres calificaciones</strong>. Identifica claramente la entrada, el proceso y la salida.</p>
+      </div>
+    </article>
+
+    <!-- Tema 2 -->
+    <article class="topic">
+      <div class="topic-number">Tema 2</div>
+      <h2>Diagramas de flujo</h2>
+      <p class="explanation">
+        Un <strong>diagrama de flujo</strong> es una representación gráfica del
+        algoritmo. Permite visualizar el recorrido de una solución usando
+        símbolos estándar: inicio/fin (óvalo), proceso (rectángulo), decisión
+        (rombo), entrada/salida y conectores.
+      </p>
+      <ul>
+        <li>¿Qué es un diagrama de flujo?</li>
+        <li>Símbolos principales</li>
+        <li>Inicio y fin</li>
+        <li>Proceso</li>
+        <li>Entrada y salida de datos</li>
+        <li>Decisiones</li>
+        <li>Conectores</li>
+        <li>Ventajas de utilizar diagramas de flujo</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo</div>
+        <p>
+          Para saber si un número es par o impar: se lee el número, se calcula
+          el residuo al dividir entre 2; si el residuo es 0 se muestra “par”,
+          en caso contrario “impar”. El rombo representa esa decisión.
+        </p>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Dibuja un diagrama de flujo que determine si una persona es mayor de edad (edad ≥ 18). Usa al menos los símbolos de inicio, entrada, decisión, proceso/salida y fin.</p>
+      </div>
+    </article>
+
+    <!-- Tema 3 -->
+    <article class="topic">
+      <div class="topic-number">Tema 3</div>
+      <h2>Pseudocódigo</h2>
+      <p class="explanation">
+        El <strong>pseudocódigo</strong> es una forma de escribir una solución
+        usando palabras y estructuras simples, sin depender de la sintaxis de
+        un lenguaje de programación específico. Sirve para planificar antes de
+        codificar.
+      </p>
+      <ul>
+        <li>¿Qué es el pseudocódigo?</li>
+        <li>¿Para qué sirve?</li>
+        <li>Reglas básicas</li>
+        <li>Variables</li>
+        <li>Entrada de datos</li>
+        <li>Procesos</li>
+        <li>Salida de resultados</li>
+        <li>Diferencias entre pseudocódigo y lenguaje de programación</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo</div>
+        <div class="code">Inicio
+  Leer A
+  Leer B
+  Resultado ← A + B
+  Escribir Resultado
+Fin</div>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Escribe en pseudocódigo el algoritmo para calcular el área de un triángulo (base × altura / 2). Incluye lectura de base y altura, el cálculo y la escritura del resultado.</p>
+      </div>
+    </article>
+
+    <!-- Tema 4 -->
+    <article class="topic">
+      <div class="topic-number">Tema 4</div>
+      <h2>Modelado de problemas</h2>
+      <p class="explanation">
+        Antes de programar es necesario entender el problema. El modelado
+        ayuda a reconocer las <strong>entradas</strong>, los
+        <strong>procesos</strong> y las <strong>salidas</strong>, y a diseñar
+        una solución clara y ordenada.
+      </p>
+      <ul>
+        <li>¿Qué es un problema?</li>
+        <li>Identificación del problema</li>
+        <li>Análisis de datos</li>
+        <li>Entradas</li>
+        <li>Procesos</li>
+        <li>Salidas</li>
+        <li>Diseño de una solución</li>
+        <li>Importancia del modelado antes de programar</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo — Promedio de tres calificaciones</div>
+        <p>
+          <strong>Entradas:</strong> nota1, nota2, nota3<br>
+          <strong>Proceso:</strong> promedio = (nota1 + nota2 + nota3) / 3<br>
+          <strong>Salida:</strong> mostrar el promedio
+        </p>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Modela el siguiente problema: “Calcular el total a pagar de una compra con descuento del 10% si el monto supera $50”. Identifica entradas, proceso (con la condición) y salida.</p>
+      </div>
+    </article>
+
+    <div class="unit-nav-bottom">
+      <a href="unidad1.html">← Unidad 1</a>
+      <a href="index.html">Inicio</a>
+      <a href="unidad3.html">Unidad 3 →</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Josue Neptalí Salguero Congo · Universidad Técnica de Cotopaxi</p>
+  </footer>
+
+</body>
+</html>

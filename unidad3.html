@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 3 · Introducción a la programación</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="unit-page-header">
+    <div class="inner">
+      <a class="back" href="index.html">← Portafolio</a>
+      <h1>Unidad 3: Introducción a la programación</h1>
+      <p class="subtitle">Lenguajes · Python · Operadores</p>
+    </div>
+    <div class="gold-bar"></div>
+  </header>
+
+  <main class="unit-content">
+
+    <div class="intro-block">
+      <p>
+        En esta unidad conoceremos los fundamentos de la programación.
+        Aprenderemos qué son los lenguajes de programación, cómo se clasifican
+        y daremos los primeros pasos con Python. También estudiaremos los
+        operadores que permiten realizar cálculos, comparaciones y construir
+        condiciones dentro de un programa.
+      </p>
+      <p class="objetivo"><strong>Objetivo:</strong> introducirte al pensamiento de programación y a las herramientas básicas para crear soluciones con computadora.</p>
+    </div>
+
+    <!-- Tema 1 -->
+    <article class="topic">
+      <div class="topic-number">Tema 1</div>
+      <h2>Lenguajes y paradigmas de programación</h2>
+      <p class="explanation">
+        Un <strong>lenguaje de programación</strong> es una forma de
+        comunicarse con la computadora para indicarle qué hacer. Los lenguajes
+        se utilizan para crear software y resolver problemas con instrucciones
+        claras. Existen paradigmas distintos (imperativo, orientado a objetos,
+        funcional, lógico) que organizan de manera diferente la forma de
+        resolver problemas.
+      </p>
+      <ul>
+        <li>¿Qué es un lenguaje de programación?</li>
+        <li>¿Para qué sirve un lenguaje de programación?</li>
+        <li>Lenguajes compilados e interpretados</li>
+        <li>¿Qué es un paradigma de programación?</li>
+        <li>Paradigma imperativo</li>
+        <li>Paradigma orientado a objetos</li>
+        <li>Paradigma funcional</li>
+        <li>Paradigma lógico</li>
+        <li>Importancia de elegir un paradigma adecuado</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo</div>
+        <p>
+          Python e interpretado; C y C++ suelen compilarse a código máquina.
+          Java combina compilación a bytecode e interpretación en la JVM.
+          El paradigma orientado a objetos (usado en Java, C#, Python) organiza
+          el código en clases y objetos.
+        </p>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Elige dos lenguajes que conozcas (o investiga dos) y escribe un párrafo comparando si son compilados o interpretados y a qué paradigma se asocian principalmente.</p>
+      </div>
+    </article>
+
+    <!-- Tema 2 -->
+    <article class="topic">
+      <div class="topic-number">Tema 2</div>
+      <h2>Introducción a la programación en Python</h2>
+      <p class="explanation">
+        <strong>Python</strong> es un lenguaje de programación muy usado porque
+        es claro, práctico y fácil de aprender. Permite crear programas simples
+        y complejos. Se caracteriza por una sintaxis legible, tipado dinámico
+        y una amplia biblioteca estándar.
+      </p>
+      <ul>
+        <li>¿Qué es Python?</li>
+        <li>Características principales</li>
+        <li>Instalación de Python</li>
+        <li>Estructura básica de un programa</li>
+        <li>La función print()</li>
+        <li>Variables</li>
+        <li>Entrada de datos con input()</li>
+        <li>Tipos de datos básicos</li>
+        <li>Primer programa en Python</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo</div>
+        <div class="code">print("Hola Mundo")
+
+nombre = "Josue"
+print("Hola", nombre)
+
+edad = int(input("¿Cuántos años tienes? "))
+print("Tienes", edad, "años")</div>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Escribe un programa en Python que pida el nombre y la edad del usuario, y luego muestre un mensaje del tipo: “Hola, [nombre]. El próximo año tendrás [edad+1] años.”</p>
+        <p class="hint">Usa input(), int() y print().</p>
+      </div>
+    </article>
+
+    <!-- Tema 3 -->
+    <article class="topic">
+      <div class="topic-number">Tema 3</div>
+      <h2>Operadores algebraicos, relacionales y lógicos</h2>
+      <p class="explanation">
+        Los operadores permiten hacer cálculos, comparar valores y controlar
+        decisiones dentro de un programa. Son fundamentales para producir
+        resultados y tomar decisiones (por ejemplo con <code>if</code>).
+      </p>
+      <ul>
+        <li>Operadores algebraicos: suma, resta, multiplicación, división, división entera, módulo y potencia</li>
+        <li>Operadores relacionales: igual que, diferente de, mayor que, menor que, mayor o igual y menor o igual</li>
+        <li>Operadores lógicos: AND, OR y NOT</li>
+        <li>Aplicación de operadores en programas</li>
+        <li>Importancia para la toma de decisiones</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo</div>
+        <div class="code">edad = 18
+if edad >= 18:
+    print("Mayor de edad")
+else:
+    print("Menor de edad")
+
+usuario = True
+clave = True
+if usuario and clave:
+    print("Acceso permitido")</div>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Escribe un programa que pida dos números y muestre:</p>
+        <p style="margin-top:6px">
+          a) Su suma, resta, producto y división<br>
+          b) Si el primero es mayor, menor o igual que el segundo<br>
+          c) Un mensaje de “ambos positivos” solo si los dos son mayores que cero (usa <code>and</code>)
+        </p>
+      </div>
+    </article>
+
+    <div class="unit-nav-bottom">
+      <a href="unidad2.html">← Unidad 2</a>
+      <a href="index.html">Finalizar · Inicio</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Josue Neptalí Salguero Congo · Universidad Técnica de Cotopaxi</p>
+  </footer>
+
+</body>
+</html>

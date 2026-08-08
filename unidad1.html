@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 1 · Estructura del computador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="unit-page-header">
+    <div class="inner">
+      <a class="back" href="index.html">← Portafolio</a>
+      <h1>Unidad 1: Estructura y funcionamiento del computador</h1>
+      <p class="subtitle">Fundamentos de computación</p>
+    </div>
+    <div class="gold-bar"></div>
+  </header>
+
+  <main class="unit-content">
+
+    <div class="intro-block">
+      <p>
+        En esta unidad conoceremos cómo funciona un computador desde sus
+        componentes principales hasta la forma en que procesa la información.
+        Comprender estos conceptos permite desarrollar programas de manera más
+        eficiente, ya que un programador necesita entender cómo piensa y
+        trabaja una computadora antes de escribir código.
+      </p>
+      <p class="objetivo"><strong>Objetivo:</strong> comprender la estructura básica del computador y los principios que permiten que el software se ejecute correctamente.</p>
+    </div>
+
+    <!-- Tema 1 -->
+    <article class="topic">
+      <div class="topic-number">Tema 1</div>
+      <h2>Modelo de Von Neumann y Harvard</h2>
+      <p class="explanation">
+        La arquitectura de un computador es la forma en que sus partes se
+        organizan para trabajar juntas. El <strong>modelo de Von Neumann</strong>
+        usa una memoria compartida para guardar datos e instrucciones y una CPU
+        para procesarlos. El <strong>modelo Harvard</strong> separa la memoria
+        de datos y la memoria de instrucciones para mejorar la velocidad.
+      </p>
+      <ul>
+        <li>¿Qué es la arquitectura de un computador?</li>
+        <li>Modelo de Von Neumann</li>
+        <li>Modelo Harvard</li>
+        <li>Diferencias entre ambos modelos</li>
+        <li>Ventajas y desventajas</li>
+        <li>Aplicaciones actuales</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo</div>
+        <p>
+          La mayoría de las computadoras personales actuales siguen una
+          arquitectura inspirada en Von Neumann: un solo bus y una memoria
+          principal donde conviven programa y datos. En cambio, muchos
+          microcontroladores y DSP usan Harvard para ejecutar instrucciones
+          mientras leen datos en paralelo.
+        </p>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Elabora un cuadro comparativo (máximo 6 filas) entre el modelo de Von Neumann y el modelo Harvard: memoria, buses, velocidad y uso típico.</p>
+        <p class="hint">Puedes hacerlo en papel o en un documento; entrega al finalizar la unidad.</p>
+      </div>
+    </article>
+
+    <!-- Tema 2 -->
+    <article class="topic">
+      <div class="topic-number">Tema 2</div>
+      <h2>Sistemas Operativos</h2>
+      <p class="explanation">
+        Un <strong>sistema operativo</strong> es el programa principal que
+        permite que el computador se comunique con el usuario y con los
+        dispositivos. Organiza tareas, controla procesos, administra memoria
+        y facilita el acceso a los archivos.
+      </p>
+      <ul>
+        <li>¿Qué es un sistema operativo?</li>
+        <li>Funciones principales</li>
+        <li>Administración de memoria</li>
+        <li>Administración de procesos</li>
+        <li>Gestión de archivos</li>
+        <li>Tipos de sistemas operativos</li>
+        <li>Ejemplos: Windows, Linux, macOS y Android</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo</div>
+        <p>
+          Cuando abres un navegador y un editor de texto a la vez, el sistema
+          operativo reparte el tiempo de CPU entre ambos procesos y asigna
+          memoria a cada uno para que no interfieran entre sí.
+        </p>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Investiga y escribe en media página qué sistema operativo usas, qué versión es y nombra tres funciones concretas que realiza en tu día a día (por ejemplo: gestión de archivos, control de red, interfaz gráfica).</p>
+      </div>
+    </article>
+
+    <!-- Tema 3 -->
+    <article class="topic">
+      <div class="topic-number">Tema 3</div>
+      <h2>Sistemas de Numeración y Conversiones</h2>
+      <p class="explanation">
+        Los computadores trabajan con números. Los principales sistemas son
+        decimal, binario, octal y hexadecimal. El <strong>sistema binario</strong>
+        es especialmente importante porque los circuitos digitales interpretan
+        información en dos estados: encendido (1) y apagado (0).
+      </p>
+      <ul>
+        <li>Sistema Decimal</li>
+        <li>Sistema Binario</li>
+        <li>Sistema Octal</li>
+        <li>Sistema Hexadecimal</li>
+        <li>Conversión de Decimal a Binario</li>
+        <li>Conversión de Binario a Decimal</li>
+        <li>Conversión entre Binario, Octal y Hexadecimal</li>
+        <li>Importancia en la informática</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo</div>
+        <p>Conversión de 25 decimal a binario (divisiones sucesivas entre 2):</p>
+        <div class="code">25 ÷ 2 = 12 resto 1
+12 ÷ 2 =  6 resto 0
+ 6 ÷ 2 =  3 resto 0
+ 3 ÷ 2 =  1 resto 1
+ 1 ÷ 2 =  0 resto 1
+
+Resultado (de abajo hacia arriba): 11001₂</div>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Convierte a binario los números decimales <strong>13</strong>, <strong>42</strong> y <strong>100</strong>. Luego convierte a decimal el binario <strong>101101</strong>.</p>
+        <p class="hint">Muestra el procedimiento de divisiones o de potencias de 2.</p>
+      </div>
+    </article>
+
+    <!-- Tema 4 -->
+    <article class="topic">
+      <div class="topic-number">Tema 4</div>
+      <h2>Aritmética Binaria</h2>
+      <p class="explanation">
+        La aritmética binaria es el conjunto de operaciones matemáticas que se
+        realizan usando solamente 0 y 1. Es fundamental porque la computadora
+        procesa datos de forma binaria y necesita reglas claras para sumar,
+        restar, multiplicar y dividir.
+      </p>
+      <ul>
+        <li>Suma binaria</li>
+        <li>Resta binaria</li>
+        <li>Multiplicación binaria</li>
+        <li>División binaria</li>
+        <li>Reglas básicas</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo — Suma binaria</div>
+        <div class="code">  1010
++ 0110
+------
+ 10000
+
+Reglas: 0+0=0 · 0+1=1 · 1+1=0 (lleva 1) · 1+1+1=1 (lleva 1)</div>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Realiza las siguientes sumas binarias y comprueba el resultado en decimal:</p>
+        <p style="margin-top:8px"><strong>a)</strong> 1101 + 1011 &nbsp;&nbsp; <strong>b)</strong> 10101 + 1110</p>
+      </div>
+    </article>
+
+    <!-- Tema 5 -->
+    <article class="topic">
+      <div class="topic-number">Tema 5</div>
+      <h2>Álgebra de Boole</h2>
+      <p class="explanation">
+        El álgebra booleana trabaja con variables que toman dos valores:
+        verdadero o falso (1 o 0). Con estos valores se construyen las
+        decisiones que controlan los circuitos digitales y los programas lógicos.
+      </p>
+      <ul>
+        <li>Variables booleanas</li>
+        <li>Valores verdadero y falso</li>
+        <li>Operador AND</li>
+        <li>Operador OR</li>
+        <li>Operador NOT</li>
+        <li>Tablas de verdad</li>
+        <li>Leyes básicas</li>
+        <li>Aplicación en circuitos digitales</li>
+      </ul>
+      <div class="example-box">
+        <div class="label">Ejemplo</div>
+        <div class="code">A = 1
+B = 0
+
+A AND B = 0
+A OR  B = 1
+NOT A   = 0</div>
+      </div>
+      <div class="exercise-box">
+        <div class="label">Ejercicio</div>
+        <p>Construye la tabla de verdad completa para la expresión <strong>(A AND B) OR (NOT A)</strong>. Incluye las columnas A, B, A AND B, NOT A y el resultado final.</p>
+      </div>
+    </article>
+
+    <div class="unit-nav-bottom">
+      <a href="index.html">← Inicio</a>
+      <a href="unidad2.html">Unidad 2 →</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Josue Neptalí Salguero Congo · Universidad Técnica de Cotopaxi</p>
+  </footer>
+
+</body>
+</html>
